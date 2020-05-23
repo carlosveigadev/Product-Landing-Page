@@ -1,0 +1,25 @@
+body > * {
+  font-family: 'Lato', sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  position: sticky;
+}
+
+.header-img img{
+  width: auto;
+  max-width: 300px;
+}
+
+.nav-itens {
+  display: flex;
+  align-self: center;
+}
+.nav-itens ul {
+  display: flex;
+  justify-content: space-around;
+  width: 479px;
+}
