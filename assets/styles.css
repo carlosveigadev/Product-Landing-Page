@@ -32,6 +32,11 @@ nav {
   width: 479px;
 }
 
+.nav-itens a {
+  font-size: 15px;
+  font-weight: 400;
+}
+
 header {
   margin: 80px auto;
   font-size: 24px;
@@ -40,6 +45,8 @@ header {
 
 h1 {
   margin: 20px 0;
+  font-size: 25px;
+  font-weight: 700;
 }
 
 input {
@@ -49,7 +56,7 @@ input {
   border-radius: 5px;
 }
 
-button {
+#submit, button {
   margin: 15px 0;
   padding: 0 20px;
   font-weight: 900;
@@ -65,8 +72,15 @@ button {
   transition: background-color 1s;
 }
 
-button:hover {
+#submit:hover, button:hover {
     background-color: orange;
+}
+
+form  {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
 }
 
 .fas {
@@ -125,14 +139,14 @@ h2 {
   padding-bottom: 8px;
 }
 
-.sec-box {
+.pricing {
   display: flex;
   width: 1000px;
   margin:75px auto;
   justify-content: space-around;
 }
 
-.sec-box div {
+.pricing div {
   border: 1px solid black;
   border-radius: 3px;
   width: 30%;
@@ -154,7 +168,7 @@ h3 {
   padding: 8px 0;
 }
 
-.box button {
+.box input {
   width: auto;
   font-size: 15px;
   font-weight: 4  00;
@@ -172,12 +186,12 @@ footer {
   padding: 20px;
 }
 
-ul, a {
+footer ul, footer a {
   display: flex;
   background-color: #dddddd;
 }
 
-li {
+footer li {
   padding: 0 10px;
   background-color: #dddddd;
 }
@@ -189,4 +203,14 @@ footer span {
 footer p {
   color: rgb(68, 68, 68);
   background-color: #dddddd;
+}
+
+@media (max-width: 700px) {
+  nav {
+    flex-direction: column;
+  }
+
+  header {
+    margin: 100px 0;
+  }
 }
