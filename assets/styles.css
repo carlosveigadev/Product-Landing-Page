@@ -1,14 +1,21 @@
-body > * {
+* {
   font-family: 'Lato', sans-serif;
   text-align: center;
-  box-sizing: border-box
+  box-sizing: border-box;
+  background-color: whitesmoke;
+
+
 }
+
 
 nav {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  position: sticky;
+  position: fixed;
+  width: 100%;
+  top: 0;
+
 }
 
 .header-img img{
@@ -27,9 +34,10 @@ nav {
 }
 
 header {
-  margin: 0 auto;
+  margin: 80px auto;
   font-size: 24px;
   font-weight: 700;
+
 }
 
 h1 {
@@ -39,6 +47,8 @@ h1 {
 input {
   width: 275px;
   padding: 5px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
 }
 
 button {
@@ -54,35 +64,65 @@ button {
   border: 0;
   background-color: #f1c40f;
   cursor: pointer;
+  transition: background-color 2s;
+}
+
+button:hover {
+    background-color: orange;
 }
 
 .fas {
   color: darkorange;
-  display: inline-block;
   font-size: 40px;
 }
 
+section {
+    overflow: visible;
+}
+
 .main {
+  display: inline-flex;
+  flex-direction: column;
   width: 1000px;
   font-family: 'Lato', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 125px;
-    width: 80vw;
-    padding: 5px;
-    margin: 0 auto;
+  height: 125px;
+  padding: 5px;
+  margin: 0 auto;
+  height: 100%;
 }
 
 .main div {
-    padding: 30px 0;
+  padding: 30px 0;
+  display: flex;
 }
 
-.main i {
-  float: left;
+.icon {
+  height: 125px;
+  width: 200px;
+  margin: 0 10px;
+}
+
+.icon i {
+  margin: auto auto;
+}
+
+.icon i:first-child {
+  position: relative;
+  bottom: 5px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+}
+
+.text > * {
+  text-align: left;
 }
 
 h2 {
   font-size: 24px;
   font-weight: 700;
+  padding-bottom: 8px;
 }
