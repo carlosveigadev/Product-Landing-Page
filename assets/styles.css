@@ -1,9 +1,8 @@
-* {
+*, body > * {
   font-family: 'Lato', sans-serif;
   text-align: center;
   box-sizing: border-box;
   background-color: whitesmoke;
-
 
 }
 
@@ -15,7 +14,7 @@ nav {
   position: fixed;
   width: 100%;
   top: 0;
-
+  z-index: 1;
 }
 
 .header-img img{
@@ -37,7 +36,6 @@ header {
   margin: 80px auto;
   font-size: 24px;
   font-weight: 700;
-
 }
 
 h1 {
@@ -64,7 +62,7 @@ button {
   border: 0;
   background-color: #f1c40f;
   cursor: pointer;
-  transition: background-color 2s;
+  transition: background-color 1s;
 }
 
 button:hover {
@@ -125,4 +123,40 @@ h2 {
   font-size: 24px;
   font-weight: 700;
   padding-bottom: 8px;
+}
+
+.sec-box {
+  display: flex;
+  width: 1000px;
+  margin:75px auto;
+  justify-content: space-around;
+}
+
+.sec-box div {
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 30%;
+}
+
+h4 {
+  font-weight: 700;
+  padding: 15px 0;
+  background-color: #dddddd;
+}
+
+h3 {
+  margin-top: 15px;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.box p {
+  padding: 8px 0;
+}
+
+.box button {
+  width: auto;
+  font-size: 15px;
+  font-weight: 4  00;
+  height: 40px;
 }
