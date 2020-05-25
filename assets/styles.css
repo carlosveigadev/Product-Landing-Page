@@ -160,3 +160,33 @@ h3 {
   font-weight: 4  00;
   height: 40px;
 }
+
+footer {
+  width: 1000px;
+  height: 84px;
+  background-color: #dddddd;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 20px;
+}
+
+ul, a {
+  display: flex;
+  background-color: #dddddd;
+}
+
+li {
+  padding: 0 10px;
+  background-color: #dddddd;
+}
+
+footer span {
+  margin-top: 15px;
+}
+
+footer p {
+  color: rgb(68, 68, 68);
+  background-color: #dddddd;
+}
